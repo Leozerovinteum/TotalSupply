@@ -3,7 +3,7 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 
 router.get('/', auth, (req, res) => {
-  res.json([{ id: 1, nome: 'Obra Exemplo' }]);
+  res.json([{ id: 1, nome: 'Obra Exemplo', status: 'ANDAMENTO' }]);
 });
 
 module.exports = router;
